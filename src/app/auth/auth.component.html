@@ -1,0 +1,31 @@
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    
+    <hr />
+
+    <label for="Email"><b>Email</b></label>
+    <input
+      type="text"
+      placeholder="Enter email"
+      name="email"
+      formControlName="email"
+      required
+    />
+  
+   
+  
+    <label for="pwd" ><b>Password</b></label>
+    <input
+      type="password"
+      placeholder="Enter-Password"
+      name="password"
+      formControlName="password"
+      required
+    />
+   
+  
+  
+    
+  
+    <button type="submit" class="registerbtn">Add</button>
+  </form>
+  
