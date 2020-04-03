@@ -1,72 +1,58 @@
 <form [formGroup]="basicForm" (ngSubmit)="onSubmit()">
-  <p>Please add user details.</p>
   <hr />
-  <div class="card">
-  <div class="card-body">
-  <label for="Name"><b>Name</b></label>
-  <!-- <input
-    type="text"
-    placeholder="Enter name"
-    name="name"
-    formControlName="name"
-    required
-  /> -->
-  <input type="text" id="username" formControlName="name" [ngClass]="{'form-submitted': formSubmitted}" placeholder="Username"/>
-  <label for="Email"><b>Email</b></label>
-  <input
-    type="text"
-    placeholder="Enter email"
-    name="email"
-    formControlName="email"
-    required
-  />
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <label for="Name"><b>Name</b></label>
+      <input
+        type="text"
+        placeholder="Enter name"
+        name="name"
+        formControlName="name"
+        required
+      />
+      <label for="Email"><b>Email</b></label>
+      <input
+        type="text"
+        placeholder="Enter email"
+        name="email"
+        formControlName="email"
+        required
+      />
 
-  <label for="Gender"><b>Gender</b></label>
-  <input
-    type="text"
-    placeholder="Enter gender"
-    name="gender"
-    formControlName="gender"
-    required
-  />
-  <hr />
+      <label for="Gender"><b>Gender</b></label>
+      <input
+        type="text"
+        placeholder="Enter gender"
+        name="gender"
+        formControlName="gender"
+        required
+      />
+      <hr />
 
-  <label for="pwd" ><b>Password</b></label>
-  <input
-    type="password"
-    placeholder="Enter-Password"
-    name="password"
-    formControlName="password"
-    required
-  />
- 
+      <label for="pwd"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter-Password"
+        name="password"
+        formControlName="password"
+        required
+      />
 
+      <label for="Confirm"><b>Confirm Password</b></label>
 
-  <label for="Confirm" ><b>Confirm Password</b></label>
-  
-  <input
-    type="password"
-    placeholder="ConfirmPassword"
-    name="confirmPassword"
-    formControlName="confirmPassword"
-    required
-  />
-  <hr />
-
-  <!-- <div *ngIf='errorState' class="alert alert-danger" role="alert">
-    <strong>Error: </strong> Company adding failed ! 
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-</div>
-<div *ngIf='completeStatus' class="alert alert-success" role="alert">
-    <strong>Success :</strong> Company added successfully ! 
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-</div> -->
-
-  <button type="submit" class="registerbtn">Add</button>
+      <input
+        type="password"
+        placeholder="ConfirmPassword"
+        name="confirmPassword"
+        formControlName="confirmPassword"
+        required
+      />
+      <hr />
+      <div class="col-md-4 offset-md-4">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+          Add User
+        </button>
+      </div>
+    </div>
   </div>
-</div>
 </form>
